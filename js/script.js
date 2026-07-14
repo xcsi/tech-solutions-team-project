@@ -1,8 +1,7 @@
-window.onload = function () {
-
+if (!sessionStorage.getItem("welcomeShown")) {
     alert("Welcome to OAO!");
-
-};
+    sessionStorage.setItem("welcomeShown", "true");
+}
 
 function validateForm() {
 
